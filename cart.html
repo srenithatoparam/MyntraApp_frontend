@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Myntra</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* Cart Styles */
+    .cart-container {
+      margin-bottom: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .cart-item img {
+      width: 100px;
+      margin-right: 20px;
+    }
+
+    .cart-item-info {
+      flex: 1;
+    }
+
+    .cart-item-info h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .cart-item-info p {
+      margin: 5px 0;
+      color: #777;
+    }
+
+    .cart-item-price {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .total-price {
+      text-align: right;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .checkout-btn {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .checkout-btn:hover {
+      background-color: #555;
+    }
+
+    /* Payment Options Styles */
+    .payment-options {
+      margin-top: 30px;
+    }
+
+    .payment-option {
+      margin-bottom: 10px;
+    }
+
+    .place-order-btn {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .place-order-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://images.adgully.com/img/800/201704/myntra-logo.jpg" alt="Myntra Logo">
+    <nav>
+        <a href="login.html">Register</a>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>  
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Your Shopping Cart</h1>
+    <div class="cart-container">
+      <div class="cart-item">
+        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Product Image">
+        <div class="cart-item-info">
+          <h3>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h3>
+          <p>Price: $109.95</p>
+          <p>Quantity: 1</p>
+        </div>
+        <div class="cart-item-price">$109.95</div>
+      </div>
+      <!-- Add more cart items here -->
+    </div>
+    <div class="total-price">
+      Total: $109.95 <!-- Calculate total price dynamically using JavaScript -->
+    </div>
+    <button class="checkout-btn" onclick="showPaymentOptions()">Proceed to Checkout</button>
+
+    <!-- Payment Options -->
+    <div class="payment-options" style="display: none;">
+      <h2>Select Payment Option:</h2>
+      <div class="payment-option">
+        <input type="radio" id="paytm" name="payment" value="paytm">
+        <label for="paytm">Paytm</label>
+      </div>
+      <div class="payment-option">
+        <input type="radio" id="phonepe" name="payment" value="phonepe">
+        <label for="phonepe">PhonePe</label>
+      </div>
+      <div class="payment-option">
+        <input type="radio" id="gpay" name="payment" value="gpay">
+        <label for="gpay">GPay</label>
+      </div>
+      <div class="payment-option">
+        <input type="radio" id="cod" name="payment" value="cod">
+        <label for="cod">Cash on Delivery</label>
+      </div>
+      <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+  </div>
+
+  <script>
+    function showPaymentOptions() {
+      document.querySelector('.payment-options').style.display = 'block';
+    }
+
+    function placeOrder() {
+      alert('Order Placed Successfully');
+    }
+  </script>
+</body>
+</html>

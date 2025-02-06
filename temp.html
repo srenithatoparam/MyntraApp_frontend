@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Myntra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .product-category {
+      margin-bottom: 40px;
+    }
+
+    .product-category h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #db7093;
+      padding-bottom: 10px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .product {
+      width: calc(25% - 20px);
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .product p {
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://images.adgully.com/img/800/201704/myntra-logo.jpg" alt="Myntra Logo" style="width: 150px; margin-bottom: 20px;">
+      <nav>
+        <a href="login.html">Register</a>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>  
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+    </header>
+    <h1>Welcome to Myntra</h1>
+
+    <!-- Men's Clothing -->
+    <div class="product-category">
+      <h2>Men's Clothing</h2>
+      <div class="product-grid">
+        <!-- Men's Clothing Products -->
+        <div class="product">
+            <a href="product_details.html?id=1">Product details</a>
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops">
+            <h3>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h3>
+            <p>$109.95</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops', 109.95)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="product_details.html">
+                product details
+            </a>
+          <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="Mens Casual Premium Slim Fit T-Shirts">
+          <h3>Mens Casual Premium Slim Fit T-Shirts</h3>
+          <p>$22.3</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Mens Casual Premium Slim Fit T-Shirts', 22.3)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="product_details.html">
+                product details
+            </a>
+          <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="Mens Cotton Jacket">
+          <h3>Mens Cotton Jacket</h3>
+          <p>$55.99</p>
+          <button class="add-to-cart-btn" onclick="addToCart('', )">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="product_details.html">
+                product details
+            </a>
+          <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="Mens Casual Slim Fit">
+          <h3>Mens Casual Slim Fit</h3>
+          <p>$15.99</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Mens Casual Slim Fit', 15.99)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jewelry -->
+    <div class="product-category">
+      <h2>Jewelry</h2>
+      <div class="product-grid">
+        <!-- Jewelry Products -->
+        <div class="product">
+            <a href="product_details.html">
+                product details
+            </a>
+          <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet">
+          <h3>John Hardy Womens Legends Naga Gold & Silver Dragon Station Chain Bracelet</h3>
+          <p>$695</p>
+          <button class="add-to-cart-btn" onclick="addToCart('John Hardy Womens Legends Naga Gold & Silver Dragon Station Chain Bracelet', 695)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="product_details.html">
+                product details
+            </a>
+          <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="Solid Gold Petite Micropave">
+          <h3>Solid Gold Petite Micropave</h3>
+          <p>$168</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Solid Gold Petite Micropave', 168)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="product_details.html">
+                product details
+            </a>
+          <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="White Gold Plated Princess">
+          <h3>White Gold Plated Princess</h3>
+          <p>$9.99</p>
+          <button class="add-to-cart-btn" onclick="addToCart('White Gold Plated Princess', 9.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="product_details.html">
+                product details
+            </a>
+          <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="Pierced Owl Rose Gold Plated Stainless Steel Double">
+          <h3>Pierced Owl Rose Gold Plated Stainless Steel Double</h3>
+          <p>$10.99</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Pierced Owl Rose Gold Plated Stainless Steel Double', 10.99)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Women's Clothing -->
+    <div class="product-category">
+        <h2>Women's Clothing</h2>
+        <div class="product-grid">
+          <!-- Women's Clothing Products -->
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" alt="BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats">
+            <h3>BIYLACLESEN Womens 3-in-1 Snowboard Jacket Winter Coats</h3>
+            <p>$56.99</p>
+            <button class="add-to-cart-btn" onclick="addToCart('BIYLACLESEN Womens 3-in-1 Snowboard Jacket Winter Coats', 56.99)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket">
+            <h3>Lock and Love Womens Removable Hooded Faux Leather Moto Biker Jacket</h3>
+            <p>$29.95</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Lock and Love Womens Removable Hooded Faux Leather Moto Biker Jacket', 29.95)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" alt="Rain Jacket Women Windbreaker Striped Climbing Raincoats">
+            <h3>Rain Jacket Women Windbreaker Striped Climbing Raincoats</h3>
+            <p>$39.99</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Rain Jacket Women Windbreaker Striped Climbing Raincoats', 39.99)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" alt="MBJ Women's Solid Short Sleeve Boat Neck V">
+            <h3>MBJ Womens Solid Short Sleeve Boat Neck V</h3>
+            <p>$9.85</p>
+            <button class="add-to-cart-btn" onclick="addToCart('MBJ Womens Solid Short Sleeve Boat Neck V', 9.85)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" alt="Opna Women's Short Sleeve Moisture">
+            <h3>Opna Womens Short Sleeve Moisture</h3>
+            <p>$7.95</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Opna Womens Short Sleeve Moisture', 7.95)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt="DANVOUY Womens T Shirt Casual Cotton Short">
+            <h3>DANVOUY Womens T Shirt Casual Cotton Short</h3>
+            <p>$12.99</p>
+            <button class="add-to-cart-btn" onclick="addToCart('DANVOUY Womens T Shirt Casual Cotton Short', 12.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Electronics -->
+      <div class="product-category">
+        <h2>Electronics</h2>
+        <div class="product-grid">
+          <!-- Electronics Products -->
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="WD 2TB Elements Portable External Hard Drive - USB 3.0">
+            <h3>WD 2TB Elements Portable External Hard Drive - USB 3.0</h3>
+            <p>$64</p>
+            <button class="add-to-cart-btn" onclick="addToCart('WD 2TB Elements Portable External Hard Drive - USB 3.0', 64)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" alt="SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s">
+            <h3>SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h3>
+            <p>$109</p>
+            <button class="add-to-cart-btn" onclick="addToCart('SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s', 109)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" alt="Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5">
+            <h3>Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</h3>
+            <p>$109</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5', 109)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" alt="WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive">
+            <h3>WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</h3>
+            <p>$114</p>
+            <button class="add-to-cart-btn" onclick="addToCart('WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive', 114)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" alt="Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin">
+            <h3>Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h3>
+            <p>$599</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin', 599)">Add to Cart</button>
+          </div>
+          <div class="product">
+              <a href="product_details.html">
+                  product details
+              </a>
+            <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" alt="Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED">
+            <h3>Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED</h3>
+            <p>$999.99</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED', 999.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function addToCart(productName, price) {
+      // Retrieve existing cart items from local storage
+      let cartItems = localStorage.getItem('cartItems');
+      if (cartItems === null || cartItems === undefined) {
+        cartItems = [];
+      } else {
+        cartItems = JSON.parse(cartItems);
+      }
+
+      // Add the selected product to cart
+      cartItems.push({ name: productName, price: price });
+
+      // Store updated cart items in local storage
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+      // Display a message
+      alert("It has been added to cart. Go checkout in the cart.");
+
+      // Navigate to cart page
+      window.location.href = 'cart.html';
+    }
+  </script>
+</body>
+</html>
