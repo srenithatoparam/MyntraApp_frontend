@@ -32,7 +32,7 @@ A frontend clone of the Myntra e-commerce website built using pure HTML, CSS, an
 - JavaScript (Vanilla)
 
 ## Live Demo
-[View Live Demo](your-deployed-site-url)
+[View Live Demo](https://glistening-kitsune-7eb69d.netlify.app/)
 
 ## Getting Started
 
